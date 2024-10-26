@@ -1,0 +1,48 @@
+Proyecto: Crear un Sistema para un Restaurante
+Objetivo del Proyecto:
+Tu misión es construir un sistema completo para un restaurante. Este sistema debe
+incluir tanto el diseño como la programación usando los lenguajes y herramientas que te
+vamos a detallar. Vamos a ver qué necesitas hacer y cómo lo vas a hacer.
+1. Qué Debe Hacer el Sistema:  Interfaz de Usuario (UI): La interfaz debe ser fácil de usar para el personal del
+restaurante. Necesitarás crear pantallas para:
+o Menú: Para agregar, modificar y eliminar platos.
+o Pedidos: Para registrar y manejar los pedidos de los clientes.
+o Inventario: Para controlar el stock de los ingredientes.
+o Reportes: Para generar informes sobre ventas, pedidos y estado del
+inventario.  Backend (Parte del Servidor):
+o Usuarios: Gestionar quién puede acceder al sistema (administradores,
+camareros, cocineros).
+o Base de Datos: Guardar información sobre el menú, los pedidos, el
+inventario y los usuarios.
+o Lógica de Negocio: Procesar los pedidos, gestionar el inventario y
+generar reportes.
+
+2. Tecnologías que Vas a Usar:  Frontend (Lo que ves en la pantalla):
+o HTML: Para estructurar las páginas web.
+o CSS: Para darle estilo y hacer que se vea bien.
+o JavaScript: Para añadir interactividad y funcionalidades dinámicas.  Backend (El motor que hace funcionar el sistema):
+o PHP: Para manejar la lógica del servidor y conectar con la base de datos.
+o Node.js: Puedes usarlo también para algunas funciones específicas del
+servidor si lo necesitas.  Base de Datos:
+o MySQL: Para guardar toda la información sobre el restaurante.
+
+3. Cómo Debe Ser el Diseño:
+
+ Herramientas de Diseño: Usa herramientas como Figma, Adobe XD o Sketch
+para diseñar cómo se verá la interfaz.  Principios de Diseño: Asegúrate de que sea fácil de usar y agradable a la vista.
+4. Qué Debes Entregar:  Documentación:
+
+o Explicación del sistema y qué hace cada parte.
+o Diagramas para mostrar cómo funciona el sistema.
+o Manuales para los usuarios y administradores.  Código Fuente:
+o Código bien escrito y organizado en un repositorio, como GitHub.
+o Instrucciones para instalar y configurar el sistema.  Prototipo de Diseño:
+o Diseños y maquetas de la interfaz.
+o Explicación de por qué tomaste ciertas decisiones de diseño.
+
+5. Cómo se Evaluará Tu Trabajo:
+Tu proyecto se evaluará según:  Funcionalidad Completa: Si el sistema cumple con todos los requisitos.  Calidad del Código: Cómo está estructurado, documentado y escrito el código.  Diseño de Interfaz: Qué tan fácil y atractivo es de usar.  Implementación del Backend y la Base de Datos: Cómo de bien maneja los
+datos y las funcionalidades.  Documentación: La claridad y detalle de la documentación.
+Recursos Adicionales:  Busca tutoriales y guías en línea para HTML, CSS, JavaScript, PHP, MySQL y
+Node.js.  Mira ejemplos de proyectos similares para tener una idea más clara de cómo
+hacerlo.
