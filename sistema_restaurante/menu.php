@@ -1,5 +1,12 @@
 <?php
     session_start();
+    require_once './controladores/PlatoControl.php';
+    require_once './config/db.php';
+
+    $database = new Database();
+    $db = $database->getConnection();
+    $platoControl = new PlatoControl($db);
+    $platos = $platoControl->request();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,10 +41,10 @@
     </header>
     <main>
         <?php foreach($platos as $p): ?>
-            <h2>Plato</h2>
-            <p>Descripcion</p>
-            <p>Precio</p>
-            <button>Agregar a la orden</button>
+            <h2>Plato: <?php echo $p['nombre']; ?></h2>
+            <p>Precio: <?php echo $p['precio']; ?></p>
+            <p>cantidad: <?php echo $p['cantidad']; ?></p>
+            <p>disponibilidad: <?php echo $p['disponibilidad']; ?></p>
         <?php endforeach; ?>
     </main>
 </body>
