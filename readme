@@ -1,48 +1,36 @@
-Proyecto: Crear un Sistema para un Restaurante
-Objetivo del Proyecto:
-Tu misión es construir un sistema completo para un restaurante. Este sistema debe
-incluir tanto el diseño como la programación usando los lenguajes y herramientas que te
-vamos a detallar. Vamos a ver qué necesitas hacer y cómo lo vas a hacer.
-1. Qué Debe Hacer el Sistema:  Interfaz de Usuario (UI): La interfaz debe ser fácil de usar para el personal del
-restaurante. Necesitarás crear pantallas para:
-o Menú: Para agregar, modificar y eliminar platos.
-o Pedidos: Para registrar y manejar los pedidos de los clientes.
-o Inventario: Para controlar el stock de los ingredientes.
-o Reportes: Para generar informes sobre ventas, pedidos y estado del
-inventario.  Backend (Parte del Servidor):
-o Usuarios: Gestionar quién puede acceder al sistema (administradores,
-camareros, cocineros).
-o Base de Datos: Guardar información sobre el menú, los pedidos, el
-inventario y los usuarios.
-o Lógica de Negocio: Procesar los pedidos, gestionar el inventario y
-generar reportes.
+Pasos para instalar el sistema
 
-2. Tecnologías que Vas a Usar:  Frontend (Lo que ves en la pantalla):
-o HTML: Para estructurar las páginas web.
-o CSS: Para darle estilo y hacer que se vea bien.
-o JavaScript: Para añadir interactividad y funcionalidades dinámicas.  Backend (El motor que hace funcionar el sistema):
-o PHP: Para manejar la lógica del servidor y conectar con la base de datos.
-o Node.js: Puedes usarlo también para algunas funciones específicas del
-servidor si lo necesitas.  Base de Datos:
-o MySQL: Para guardar toda la información sobre el restaurante.
+Paso 1:
+Descargue toda la carpeta de archivos que esta subida en github
 
-3. Cómo Debe Ser el Diseño:
+Paso 2:
+instale xampp en su ultima version
 
- Herramientas de Diseño: Usa herramientas como Figma, Adobe XD o Sketch
-para diseñar cómo se verá la interfaz.  Principios de Diseño: Asegúrate de que sea fácil de usar y agradable a la vista.
-4. Qué Debes Entregar:  Documentación:
+Paso 3:
+Abra xampp y ponga en el boton de start en las opciones de "Apache" y "MySQL"
 
-o Explicación del sistema y qué hace cada parte.
-o Diagramas para mostrar cómo funciona el sistema.
-o Manuales para los usuarios y administradores.  Código Fuente:
-o Código bien escrito y organizado en un repositorio, como GitHub.
-o Instrucciones para instalar y configurar el sistema.  Prototipo de Diseño:
-o Diseños y maquetas de la interfaz.
-o Explicación de por qué tomaste ciertas decisiones de diseño.
+Paso 4:
+Haga click en la opcion de "Admin" en la parte de "MySQL"
 
-5. Cómo se Evaluará Tu Trabajo:
-Tu proyecto se evaluará según:  Funcionalidad Completa: Si el sistema cumple con todos los requisitos.  Calidad del Código: Cómo está estructurado, documentado y escrito el código.  Diseño de Interfaz: Qué tan fácil y atractivo es de usar.  Implementación del Backend y la Base de Datos: Cómo de bien maneja los
-datos y las funcionalidades.  Documentación: La claridad y detalle de la documentación.
-Recursos Adicionales:  Busca tutoriales y guías en línea para HTML, CSS, JavaScript, PHP, MySQL y
-Node.js.  Mira ejemplos de proyectos similares para tener una idea más clara de cómo
-hacerlo.
+Paso 5: 
+En las etiquetas de arriba busque una llamada SQL y ejecute este codigo "CREATE DATABASE sistema_restaurant"
+
+Paso 6: 
+Haga click en el nombre de la base de datos que creo en el menu de la izquierda
+
+Paso 7:
+Una vez adentro de la base de datos tiene un apartado en la parte de arriba que dice "Importar"
+
+Paso 8:
+Una vez en el menu de importar va a tener una opcion que dice "Seleccionar archivo", va a la ruta donde instalo el sistema que tiene un archivo
+llamado "sistema_restaurant.sql" lo selecciona y abajo de todo le da a importar
+
+Paso 9:
+copie donde instalo la carpeta "sistema_restaurante" y peguela en "htdocs" que esta carpeta esta en "xampp" que esta instalada en el disco donde 
+selecciono instalar xampp
+
+Paso 10:
+abra el sistema desde la ruta del chrome como "localhost/sistema_restaurante" y solo lo va a llevar a la pagina de log-in
+
+Paso 11:
+ingrese las credenciales que dejamos para tener el usuario adminitrador en la documentacion que le entregamos
