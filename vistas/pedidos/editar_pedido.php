@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'] . '/sistema_restaurante/config/db.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/sistema_restaurante/controladores/PedidoControl.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/restaurante/sistema_restaurante/config/db.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/restaurante/sistema_restaurante/controladores/PedidoControl.php';
 
 $database = new Database();
 $db = $database->getConnection();
@@ -42,8 +42,103 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">  
     <title>Editar Pedido</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-image: url('../../images/editar_pedido.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Verdana, Geneva, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.85);
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            font-size: 2.8rem;
+            color: #264653;
+            margin: 0;
+        }
+
+        main {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.2rem;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 8px;
+            font-size: 1rem;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #264653;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #2a9d8f;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #264653;
+            transform: scale(1.05);
+        }
+
+        a {
+            display: inline-block;
+            background-color: #e76f51;
+            color: #ffffff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            background-color: #d85740;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <header>

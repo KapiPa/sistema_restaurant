@@ -1,6 +1,5 @@
 <?php
-if (!class_exists('Database')) {
-    class Database {
+class DatabaseConnection {
     private $host = "localhost";
     private $db_name = "sistema_restaurant";
     private $username = "root";
@@ -16,7 +15,6 @@ if (!class_exists('Database')) {
             echo "Error de conexión: " . $exception->getMessage();
         }
         return $this->conn;
-    }
     }
 }
 ?>

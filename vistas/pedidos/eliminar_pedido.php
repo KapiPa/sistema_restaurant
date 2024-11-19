@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'] . '/sistema_restaurante/config/db.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/sistema_restaurante/controladores/PedidoControl.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/restaurante/sistema_restaurante/config/db.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/restaurante/sistema_restaurante/controladores/PedidoControl.php';
 
 $database = new Database();
 $db = $database->getConnection();

@@ -53,6 +53,13 @@ class Platos {
     }
 
     public function delete($id) {
+        // Delete related rows in pedidos_platos table
+        $query = "DELETE FROM pedidos_platos WHERE idPlato = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+        $stmt->execute();
+
+        // Delete row in platos table
         $query = "DELETE FROM " . $this->table_name . " WHERE id = :id";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":id", $id, PDO::PARAM_INT);
