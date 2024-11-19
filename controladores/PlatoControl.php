@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/sistema_restaurante/modelos/Platos.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/restaurante/sistema_restaurante/modelos/Platos.php';
 
 class PlatoControl {
     private $db;

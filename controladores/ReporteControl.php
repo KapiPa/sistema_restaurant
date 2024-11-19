@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/sistema_restaurante/modelos/Reporte.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/restaurante/sistema_restaurante/modelos/Reporte.php';
 
 class ReporteControl {
     private $reporte;
