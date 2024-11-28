@@ -24,12 +24,12 @@
         public function requestById($id){
             return $this->user->requestById($id);
         }
-        public function update($id, $nombre, $correo, $rol, $contra = null) {
+        public function update($id, $nombre, $rol, $contra = null) {
             if (!is_numeric($id) || $id <= 0) {
                 return "ID inválido para actualizar el usuario.";
             }
         
-            if ($this->user->update($id, $nombre, $correo, $rol, $contra)) {
+            if ($this->user->update($id, $nombre, $rol, $contra)) {
                 return "Usuario actualizado correctamente.";
             } else {
                 return "Error al actualizar el usuario.";
