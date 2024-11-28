@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-11-2024 a las 10:11:32
+-- Tiempo de generación: 28-11-2024 a las 14:35:58
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -33,6 +33,13 @@ CREATE TABLE `ingredientes` (
   `stock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `ingredientes`
+--
+
+INSERT INTO `ingredientes` (`id`, `nombre`, `stock`) VALUES
+(4, 'asd', 22);
+
 -- --------------------------------------------------------
 
 --
@@ -54,7 +61,8 @@ CREATE TABLE `pedidos` (
 
 INSERT INTO `pedidos` (`id`, `nombre`, `mesa`, `subtotal`, `estado`, `fecha`) VALUES
 (20, 'Rogelia', 1, 30000.00, 'Listo', '2024-11-05'),
-(21, 'Rogelia', 2, 40500.00, 'Listo', '2024-11-05');
+(22, 'test', 25, 9000.00, '', '2024-11-19'),
+(23, 'kapi', 23, 1500.00, '', '2024-11-28');
 
 -- --------------------------------------------------------
 
@@ -76,8 +84,8 @@ CREATE TABLE `pedidos_platos` (
 INSERT INTO `pedidos_platos` (`id`, `idPlato`, `idPedido`, `cantidad`) VALUES
 (14, 1, 20, 10),
 (15, 2, 20, 10),
-(16, 1, 21, 13),
-(17, 2, 21, 14);
+(18, 1, 22, 6),
+(19, 1, 23, 1);
 
 -- --------------------------------------------------------
 
@@ -120,8 +128,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `contraseña`, `rol`) VALUES
-(7, 'Rogelia', 'a@gmail.com', 'test', 3),
-(13, 'kapi', 'c@gmail.com', 'test', 2);
+(7, 'Admin', 'a@gmail.com', 'sudopass', 3);
 
 --
 -- Índices para tablas volcadas
@@ -168,19 +175,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `ingredientes`
 --
 ALTER TABLE `ingredientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de la tabla `pedidos_platos`
 --
 ALTER TABLE `pedidos_platos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `platos`
@@ -192,7 +199,7 @@ ALTER TABLE `platos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Restricciones para tablas volcadas
