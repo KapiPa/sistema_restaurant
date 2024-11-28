@@ -1,5 +1,5 @@
 <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/sistema_restaurante/config/db.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/restaurante/sistema_restaurante/config/db.php';
     class Usu{
         private $conn;
         private $table_name = "usuarios";
@@ -37,16 +37,15 @@
             $stmt->execute();
             return $stmt->fetch(PDO::FETCH_ASSOC);
         }
-        public function update($id, $nombre, $correo, $rol, $contra){
+        public function update($id, $nombre, $rol, $contra){
             if ($contra !== null) {
-                $query = "UPDATE " . $this->table_name . " SET nombre = :nombre, correo = :correo, rol = :rol, contraseña = :contra WHERE id = :id";
+                $query = "UPDATE " . $this->table_name . " SET nombre = :nombre, rol = :rol, contraseña = :contra WHERE id = :id";
             } else {
-                $query = "UPDATE " . $this->table_name . " SET nombre = :nombre, correo = :correo, rol = :rol WHERE id = :id";
+                $query = "UPDATE " . $this->table_name . " SET nombre = :nombre, rol = :rol WHERE id = :id";
             }
             $stmt = $this->conn->prepare($query);
 
             $stmt->bindParam(":nombre", $nombre);
-            $stmt->bindParam(":correo", $correo);
             $stmt->bindParam(":rol", $rol);
             $stmt->bindParam(":id", $id, PDO::PARAM_INT);
 
